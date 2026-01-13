@@ -1,0 +1,53 @@
+{
+  "dart.enableSdkFormatter": true,
+  "dart.flutterVersion": "latest",
+  "dart.debugSdkLibraries": true,
+  "dart.debugExternalPackages": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.dart"
+    ]
+  },
+  "files.exclude": {
+    ".dart_tool": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "search.exclude": {
+    ".dart_tool": true,
+    "build": true
+  },
+  "dart.updateImportsOnRename": true,
+  "dart.completeFunctionCalls": true,
+  "dart.showTodos": true,
+  "dart.lsp.dartSdkPath": "${env:FLUTTER_SDK}/bin/cache/dart-sdk",
+  "dart.flutterSdkPath": ".fvm/versions/3.27.1",
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "error"
+  ],
+  "errorLens.excludeBySource": [],
+  "errorLens.delay": 200,
+  "gitlens.currentLineBlame": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.words": [
+    "Riverpod",
+    "riverpod",
+    "GoRouter",
+    "cupertino",
+    "pubspec",
+    "riverpod",
+    "scouter",
+    "Pawfinder",
+    "beariscope"
+  ],
+  "separators.showOnSelection": true,
+  "separators.separatorColor": "#C3E1FF4D",
+  "separators.includeSelection": true
+}

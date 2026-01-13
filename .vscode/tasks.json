@@ -1,0 +1,195 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Flutter: Clean",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"clean"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Analyze",
+			"type": "shell",
+			"command": "dart",
+			"args": [
+				"analyze"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": [
+				"$dart-analyzer"
+			]
+		},
+		{
+			"label": "Flutter: Format",
+			"type": "shell",
+			"command": "dart",
+			"args": [
+				"format",
+				"."
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Test",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"test"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Run (Web - Chrome)",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"run",
+				"-d",
+				"chrome"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Run (Android Emulator)",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"run",
+				"-d",
+				"android"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Run (Debug)",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"run",
+				"--debug"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Run (Release)",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"run",
+				"--release"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Build Web",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"build",
+				"web",
+				"--release"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Build APK (Android)",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk",
+				"--release"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Build AAB (Android)",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"build",
+				"appbundle",
+				"--release"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Flutter: Doctor",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"doctor",
+				"-v"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Dart: Pub Upgrade",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"pub",
+				"upgrade"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		}
+	]
+}
