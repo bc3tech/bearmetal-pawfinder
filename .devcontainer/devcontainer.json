@@ -1,0 +1,71 @@
+{
+	"name": "Pawfinder Flutter Dev",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".",
+		"args": {
+			"TARGET_ARCH": "linux/amd64",
+			"BUILDKIT_INLINE_CACHE": "1"
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "17"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Dart-Code.flutter",
+				"Dart-Code.pubspec-assist",
+				"alexisvt.flutter-snippets",
+				"pflannery.vscode-versionlens",
+				"eamodio.gitlens",
+				"usernamehw.errorlens",
+				"usernamehw.separators",
+				"streetsidesoftware.code-spell-checker",
+				"thegeekbilly.flutter-riverpod-snippets",
+				"github.vscode-github-actions",
+				"GitHub.vscode-pull-request-github"
+			],
+			"settings": {
+				"dart.debugSdkLibraries": true,
+				"dart.debugExternalPackages": true,
+				"dart.flutterVersion": "latest",
+				"editor.formatOnSave": true,
+				"[dart]": {
+					"editor.defaultFormatter": "Dart-Code.dart-code",
+					"editor.formatOnSave": true
+				},
+				"errorLens.enabledDiagnosticLevels": [
+					"warning",
+					"error"
+				],
+				"errorLens.excludeBySource": [
+					"dart"
+				],
+				"gitlens.currentLineBlame": true,
+				"gitlens.hovers.currentLine.over": "line"
+			}
+		}
+	},
+	"containerUser": "vscode",
+	"containerEnv": {
+		"FLUTTER_CHANNEL": "stable",
+		"FLUTTER_GIT_URL": "https://github.com/flutter/flutter.git",
+		"JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64",
+		"ANDROID_HOME": "/opt/android-sdk",
+		"ANDROID_SDK_ROOT": "/opt/android-sdk",
+		"PUB_CACHE": "/root/.pub-cache"
+	},
+	"postCreateCommand": "git config --global --add safe.directory /workspaces/pawfinder",
+	"mounts": [
+		"source=${localEnv:HOME}/.android,target=/root/.android,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/.gradle,target=/root/.gradle,type=bind,consistency=cached"
+	],
+	"forwardPorts": [
+		8080,
+		8888
+	]
+}
