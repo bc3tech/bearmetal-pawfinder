@@ -1,12 +1,17 @@
 {
 	"name": "Pawfinder Flutter Dev",
+	"workspaceMount": "source=${localEnv:PWD},target=/workspaces/pawfinder,type=bind,consistency=cached",
+	"workspaceFolder": "/workspaces/pawfinder",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": ".",
 		"args": {
 			"TARGET_ARCH": "linux/amd64",
 			"BUILDKIT_INLINE_CACHE": "1"
-		}
+		},
+		"options": [
+			"--platform=linux/amd64"
+		]
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
